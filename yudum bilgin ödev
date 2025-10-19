@@ -1,0 +1,41 @@
+# Python Dersi Ödevi - yudum bilgin
+# Konular: Değişkenler, if-else, döngüler, listeler, fonksiyonlar, string format
+# + Bonus: Kullanıcıdan veri alma
+
+# 1. Değişkenler
+isim = "yudum"
+yas = 20
+print("Benim adım", isim, "ve yaşım", yas)
+
+# 2. Koşullar (if-else)
+if yas >= 22:
+    print("Reşitsiniz.")
+else:
+    print("Reşitim.")
+
+# 3. Döngüler
+print("1'den 10'e kadar sayılar:")
+for i in range(1, 10):
+    print(i)
+
+# 4. Liste örneği
+meyveler = ["kivi", "kavun", "çilek"]
+print("Meyveler listesi:")
+for meyve in meyveler:
+    print(meyve)
+
+# 5. Fonksiyon
+def selamla(ad):
+    return f"Merhaba {ad}, nasılsın?"
+
+print(selamla(isim))
+
+# 6. String format (son konu)
+puan = 80.87
+print("Bugünkü sınavdan {:.2f} puan aldım.".format(puan))
+print(f"{isim} adlı öğrenci {puan:.1f} puan aldı.")
+
+
+ad = input("yudum: ")
+yas = int(input("22: "))
+print(f"{ad} adlı kişi {yas} yaşındadır.")
